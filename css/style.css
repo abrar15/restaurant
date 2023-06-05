@@ -1,0 +1,283 @@
+
+*{
+    margin: 0px; padding: 0px;
+}
+
+body{
+    font-size: 16px; color: #555;
+    font-weight: 300;
+
+    /* this will make the default in body what I wrote */
+}
+
+header{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)), url(../images/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* .image-shadow{
+    width: 100%; height: 100%; */
+    /* width and height is 100% from header */
+    /* position: absolute; left: 0px; top: 0px;
+    background-color: black;
+    opacity: .7;
+} */
+ /* insted of making div image shadow we can put linear linear gradient 
+ in the header backgrounf image but it must before 
+ url and we put in it to colors because its gradient and the a in 
+ RGBA is Alpha or Opacity */
+
+ .hero-box {
+     position: absolute;
+     top: 40%; left: 20%;
+ }
+
+ h1{
+     color: #fff;
+     font-size: 200%;
+     text-transform: uppercase;
+     font-weight: lighter;
+     letter-spacing: 2px;
+     margin-bottom: 20px;
+ }
+
+ .btn{
+     border: solid orange 1px;
+     margin-right: 15px;
+     padding: 10px 20px;
+     border-radius: 10px;
+     color: orange;
+     text-decoration: none;
+ }
+
+ .btn:hover{
+     background-color: darkorange;
+     color: #fff;
+ }
+
+ .logo{
+     height: 100px; margin-top: 20px; float: left;
+ }
+
+ .main-nav{
+     margin-top: 55px;
+     float: right;
+     list-style: none;
+ }
+
+ .main-nav li{
+     display: inline-block; 
+     /* must be inline block */
+     margin-left: 25px;
+     text-transform: uppercase;
+
+ }
+
+ .main-nav li a {
+     color: white; text-decoration: none;
+ }
+
+ .main-nav li a:hover {
+     color: orangered; text-decoration: underline;
+
+ }
+
+ section{
+     padding: 40px 0px;
+     /* for all sections */
+ }
+
+ h2{
+     text-align: center;
+     font-size: 150%;
+     text-transform: uppercase;
+     letter-spacing: 3px;
+     margin-bottom: 20px;
+ }
+
+ hr{
+     border: solid orangered 3px;
+     width: 100px;
+     margin-bottom: 20px;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+ .feat-desc{
+     width: 60%;
+     margin-left: 20%;
+     margin-bottom: 20px;
+     text-align: center;
+ }
+
+ .box i {
+     color: orange; display: block;
+     /* we display it block to make the align work */
+     margin-bottom: 7px; text-align: center;
+ }
+
+ .box h3 {
+     text-align: center;
+     margin-bottom: 7px;
+ }
+
+ .meal{
+     padding: 0px;
+     background-color: black;
+     /* this is the col-3 class we give padding 0 because col-3 
+     give padding auto */
+     overflow: hidden;
+ }
+
+
+ .meal img {
+     width:100%;
+     opacity: .5;
+     transition:all 1s ;
+     /* transiotion all means that it will take all properties 
+     in the hover and put 1s condition on it or 1 sec you can 
+     make it just opacity except of all */
+     transform: scale(1.1);
+     /* trasnform take many properties one of them is scale 
+     that make the image size bigger than original but there
+     is a problem that there is overflow with image 
+     so we will cancel it at the .meal div */
+ }
+
+ .meal img:hover{
+     opacity: 1;
+     transform: scale(1);
+ }
+
+ .city img{
+     width: 100%;
+     margin-bottom: 10px;
+ }
+
+ .city h3 {
+     margin-bottom: 10px;
+ }
+
+ .city-info{
+     margin-bottom: 10px;
+ }
+
+ .city-info i {
+     margin-right: 10px;
+     color: chocolate;
+ }
+
+ .testimonials{
+     background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+     url(../images/back-customers.jpg);
+     background-position: center;
+     background-size: cover;
+     color: #fff;
+ }
+
+ blockquote{
+     padding: 2%; line-height: 150%;
+     margin-top:20px ;
+     /* line height بعد السطور عن بعض */
+ }
+
+ cite{
+    margin-top:20px ;
+    display: block;
+    /* display block عشان نعرف نطبق عليها ال مارجن لان هي مش بلوك */
+ }
+
+cite img {
+    height: 50px; border-radius: 50%;
+    vertical-align: middle;
+    /* vertical align تستخدم لمحاذاة النص عموديا بالنسبة للصورة */
+}
+
+.pricing{
+    background-color: rgb(214, 214, 214);
+}
+
+.card{
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius : 10px; ;
+    background-color: #F4F4F4;
+   
+}
+.div-1{
+    width: 100%;
+    padding: 20px;
+    border-bottom: solid 1px #cccccc;
+    background-color: #FCFCFC;
+
+}
+.div-1 span {
+    font-size: 300%;
+    font-weight: lighter;
+    color: chocolate;
+}
+
+.div-1 h3,h4{
+   
+    font-weight: lighter;
+}
+
+.div-2{
+    border-bottom: solid 1px #cccccc;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+
+
+.pricing-info i {
+    color: chocolate;
+    margin-bottom: 20px;
+}
+
+
+.div-3{
+    height: 60px;
+    background-color: #FCFCFC;
+    position: relative;
+    border-bottom: solid 1px #cccccc;
+    
+}
+
+.card a {
+    text-decoration: none;
+    border: solid 1px chocolate;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    background-color: chocolate;
+    position: absolute;left: 80px; top: 10px;
+    
+}
+
+.card a:hover {
+    color: chocolate;
+    background-color: white;
+}
+
+input , select , textarea{
+    width: 100%;
+    margin-bottom: 8px;
+    padding: 7px;
+    border-radius: 3px;
+    border:solid 1px #888
+}
+.send{
+    padding: 10px 20px;  border-radius: 10px;
+    border: solid chocolate;
+    background-color: chocolate; color: white; 
+}
+.send:hover{
+   
+    background-color:white ; color:chocolate ; 
+}
